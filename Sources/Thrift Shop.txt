@@ -1,0 +1,11 @@
+Name: Save & Seek
+Logo: SS
+
+Home
+Men
+Women
+Kids
+Categories
+	-New Arrival
+	-Sale
+	-Collections

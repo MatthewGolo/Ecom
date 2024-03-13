@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+
+*{
+    background-color: EFEFEF;
+    margin: 0px;
+}
+.nav{
+    position: sticky;
+    top:0; left:0; right:0;
+    z-index: 1000;
+    background-color:d7d7d7;
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    justify-content: flex-end;
+}
+
+.nav a{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    padding-left: 2rem;
+    color: black;
+    text-decoration: none;
+    transition: transform .2s;
+}
+.nav a:hover{
+    transform: scale(.9);
+    color: #2768bd;
+}
+
+.nav .logo{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-right: 30rem;
+    color: black;
+}
+.icon-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    color: #0a0808;
+    background: none;
+    border: none;
+    outline: none;
+    border-radius: 80%;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: transform .3s;
+}
+  
+.icon-button:hover {
+    transform: scale(.9);
+    cursor: pointer;
+}
+.bag-button{
+    margin-right: 5rem;
+    height: auto;
+    width: auto;
+    border: none;
+    outline: none;
+    background: none;
+    transition: transform .3s;
+}
+.bag-button:hover{
+    transform: scale(.9);
+    cursor: pointer;
+}
+.search-container{
+    margin-left: -4rem;
+    margin-right: 1rem;
+    display:  flex;
+    align-items: center;
+}
+#query{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 30px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    background-color: #272727;
+    color:rgb(255, 255, 255);
+    border-radius: 13px;
+    height: 2rem;
+    width: 15rem;
+    border: none;
+    
+}
+input:focus{
+    outline: none;
+}
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+  }
+.search-btn{
+    color: white;
+    padding-left: 10px;
+    position: absolute;
+    border: none;
+    background: none;
+}
+.vl-container{
+    display: flex;
+    align-items: center;
+}
+.vl {
+    border-left: 2px solid #000000;
+    height: 25px;
+  }
+.account-button{
+    margin-left: 10px;
+    margin-right: 5rem;
+    height: auto;
+    width: auto;
+    border: none;
+    outline: none;
+    background: none;
+    transition: transform .3s;
+}
+.account-button:hover{
+    cursor: pointer;
+    transform: scale(.9);
+}
+.carousel img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.carousel {
+    width: 100%;
+    height: 40rem;
+    overflow: hidden;
+    position: relative;
+  }
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: carouselAnimation 8s infinite;
+  }
+  
+  .slide:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .slide:nth-child(2) {
+    animation-delay: 2s;
+  }
+  
+  .slide:nth-child(3) {
+    animation-delay: 4s;
+  }
+  
+  @keyframes carouselAnimation {
+    20% {
+      opacity: 1;
+    }
+    33.33% {
+      opacity: 1;
+    }
+    
+  }
+.parent h1{
+    padding-top: 3rem;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 6rem;
+}
