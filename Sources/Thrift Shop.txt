@@ -2,10 +2,32 @@ Name: Save & Seek
 Logo: SS
 
 Home
+
 Men
+shirts
+pants
+jacket
+shoes
+
+
 Women
+dress
+blouses
+sandals
+skirts
+shoes
+
 Kids
-Categories
-	-New Arrival
-	-Sale
+Boy
+pants shirts shoes
+
+girl
+dress skirt shoes
+
+
+Others
+	-New Arrivals
+	-Accessories
 	-Collections
+	-Sale
+

@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
 
 *{
-    background-color: EFEFEF;
+    background-color:EFEFEF;
     margin: 0px;
 }
 .nav{
     position: sticky;
     top:0; left:0; right:0;
     z-index: 1000;
-    background-color:d7d7d7;
+    background-color:white;
     display: flex;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -30,6 +30,46 @@
 .nav a:hover{
     transform: scale(.9);
     color: #2768bd;
+}
+.dropbtn{
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.dropbtn:hover{
+  transform: scale(.9);
+  color: #2768bd;
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .nav .logo{
@@ -60,6 +100,7 @@
     transform: scale(.9);
     cursor: pointer;
 }
+
 .bag-button{
     margin-right: 5rem;
     height: auto;
@@ -86,8 +127,8 @@
     padding-left: 30px;
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
-    background-color: #272727;
-    color:rgb(255, 255, 255);
+    background-color: #dddada;
+    color:rgb(0, 0, 0);
     border-radius: 13px;
     height: 2rem;
     width: 15rem;
@@ -103,7 +144,7 @@ input[type="search"]::-webkit-search-cancel-button {
     display: none;
   }
 .search-btn{
-    color: white;
+    color: rgb(0, 0, 0);
     padding-left: 10px;
     position: absolute;
     border: none;
@@ -174,9 +215,228 @@ input[type="search"]::-webkit-search-cancel-button {
     
   }
 .parent h1{
+    overflow: visible;
+    position: absolute;
     padding-top: 3rem;
-    text-align: center;
     font-family: "Josefin Sans", sans-serif;
-    font-weight: 400;
-    font-size: 6rem;
+    font-weight: 400px;
+    color: rgb(255, 255, 255);
+    font-size: 7rem;
+    margin-left: 65px;
+    margin-top: 200px;
+    /* text-shadow: -5px 5px 10px rgb(0, 0, 0); */
+    text-shadow: -10px 5px 10px rgb(0, 0, 0);
+}
+.parent h3{
+    overflow: visible;
+    position: absolute;
+    padding-top: 3rem;
+    font-family: "Josefin Sans", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 400px;
+    font-size: 2.5rem;
+    margin-left: 610px;
+    margin-top: 340px;
+    text-shadow: -10px 5px 10px rgb(0, 0, 0);
+
+}
+.carousel .shop-btn{
+    overflow: visible;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50%;
+    margin-bottom: -260px;
+    outline: none;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    border-radius: 10px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 1px;
+    width: 280px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 16px 16px 18px;
+    color: #ffffff;
+    box-shadow: inset 0 0 0 1px #ffffff;
+    background-color: transparent;
+}
+.parent .shop-btn:hover{
+    font-size: 35px;
+    color: #ffffff;
+    background-color:#000000;
+    box-shadow: inset 0 0 0 1px #000000;
+}
+.brand-container{
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.brand{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 15rem;
+  gap: 10rem;
+  justify-items: stretch;
+  animation: scroll 10s linear infinite;
+}
+@keyframes scroll{
+  to {
+    translate:calc(-2 * 10rem);
+  }
+}
+
+.arrival-parent {
+  padding: 22rem;
+  background-color: rgb(240, 237, 237);
+  text-align: center;
+}
+.arrival-child{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns:10rem;
+  gap: 25rem;
+  margin-left: -10rem;
+  text-align: center;
+}
+.arrival-parent h1 {
+  color: rgb(0, 0, 0);
+  font-size: 5rem;
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: -19rem;
+  margin-bottom: 5rem;
+}
+.arrival-box {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background-color: #d8d8d8;
+  padding-bottom: 1.1rem;
+  padding-right: 373.3px;
+  border-radius: 25px;
+  box-sizing: border-box;
+  margin-top: -20px;
+  margin-bottom: -15rem;
+  
+}
+.arrival-box h4{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  margin-right: 2px;
+  white-space: nowrap;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.arrival-box .na-price i{
+  color: rgb(53, 14, 14);
+  margin-right: 5px;
+}
+
+.arrival-box h3{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  white-space: nowrap;
+  margin-top: -33.2rem;
+  margin-left: 3rem;
+  color: rgb(238, 232, 232);
+  text-shadow: -4px 1px 10px rgba(0, 0, 0, 0.41);
+}
+.arrival-box .learn{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  white-space: nowrap;
+  padding: 12px;
+  padding-left: 10px;
+  margin-left: 9.5rem;
+  margin-top: -1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+.arrival-box .learn i{
+  margin-right: 8px;;
+}
+.arrival-box .learn:hover{
+  background-color: black;
+  color: white;
+}
+.arrival-box .buy{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  white-space: nowrap;
+  padding: 12px;
+  padding-left: 10px;
+  margin-top: -2.6rem;
+  margin-left: 17.2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: #000000;
+  color: white;
+}
+.arrival-box .buy i{
+  margin-right: 8px;;
+}
+.arrival-box .buy:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.arrival-box .add-btn{
+  margin-top: -3rem;
+  margin-left: 20rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #ffffff;
+  transition: transform .2s;
+}
+.arrival-box .add-btn i:hover{
+  transform: scale(1.3);
+color: rgb(170, 6, 6);
+}
+.arrival-box .bag{
+  margin-top: -7.5rem;
+  margin-left: 20.1rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #ffffff;
+  transition: transform .2s;
+}
+.arrival-box .bag:hover{
+  transform: scale(1.2);
+  color: #000000;
+}
+.arrival-child img {
+  border: #000000;
+  border-radius: 20px;
+  height: 35rem;
+}
+.arrival-child img:hover {
+  cursor: pointer;
+  fill:#b14545;
+}
+.arrival-box .star-btn{
+  margin-top: -65rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #c5bfbf;
+}
+.arrival-box .star-btn:hover{
+  color: rgb(226, 226, 21);
 }
